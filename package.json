@@ -1,13 +1,18 @@
 {
   "name": "@chancehl/slackify-this",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Converts a simple string into slack emoji tokens.",
+  "main": "./bin/main.js",
   "bin": {
     "slackify-this": "./bin/main.js"
   },
+  "scripts": {
+    "install-global": "sudo npm install -g .",
+    "uninstall-global": "sudo npm uninstall -g .",
+    "refresh": "npm run uninstall-global && npm run install-global"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Chance Linz <chlinz@outlook.com>",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0"
